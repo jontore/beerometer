@@ -3,9 +3,25 @@
   <head>
     <title>Sample App</title>
     <link rel="stylesheet" href="/style/beerometer.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/style/main.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <div id='root'>
+    <header class="rSectionHeader">
+        <div class="rSectionHeaderElement rSectionHeaderLogo"></div>
+    </header>
+
+    <div class="rNavSideBar rSectionSidebar">
+      <div class="rNavSideMain">
+        <ul class="rNavSideList">
+          <li class="rNavSideListItem">
+            <a href="#"><i class="rNavSideListItemIcon fa fa-wrench"></i><span class="rNavSideListItemDescription"> party</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="rSection rSectionWithSidebar">
+      <div id='root'>
+      </div>
     </div>
     <script src="/lib/relayr-browser-sdk.min.js"></script>
     <script src="/static/bundle.js"></script>
