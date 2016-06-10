@@ -76,10 +76,15 @@ export default class Meter extends Component {
 
   render() {
     return (
-      <div className="meterContainer">
-        <div className="bottle" dangerouslySetInnerHTML={this.createBottle()}/>
-        <div className="fillContainer">
-          <div className="fill" style={{bottom: this.calculateLevel(this.props.party) + 'px'}} dangerouslySetInnerHTML={this.createFill()}/>
+      <div>
+        <div className="rSectionHeaderBreadcrumb">
+          <h1 className="rSectionHeaderBreadcrumbTitle">Party level: {this.props.party}</h1>
+        </div>
+        <div className="meterContainer">
+          <div className="bottle" dangerouslySetInnerHTML={this.createBottle()}/>
+          <div className="fillContainer">
+            <div className="fill" style={{bottom: this.calculateLevel(this.props.party) + 'px'}} dangerouslySetInnerHTML={this.createFill()}/>
+          </div>
         </div>
       </div>
     );

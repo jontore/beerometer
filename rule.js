@@ -16,7 +16,7 @@ for each (reading in event) {
     }
   }
 
-  if (reading.name === 'newBeers') {
+  if (reading.meaning === 'newBeers') {
     ctx.put("new_beers", parseInt(reading.value, 10));
   }
 
