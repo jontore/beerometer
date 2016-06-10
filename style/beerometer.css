@@ -1,0 +1,29 @@
+.meterContainer {
+  position: relative;
+  height: 900px;
+  width: 600px;
+}
+
+.bottle {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fillContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  height: 900px;
+  width: 600px;
+  overflow: hidden;
+}
+
+.fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 900px;
+  width: 600px;
+}
