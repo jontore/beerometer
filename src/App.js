@@ -8,7 +8,7 @@ export default class App extends Component {
     super();
     this.relayr = RELAYR.init({
       appId: "1e7e744d-07af-45ad-98fd-0f9720f797bc",
-      redirectUri:"http://localhost:3000"
+      redirectUri:"http://jontore.github.io/beerometer"
     });
     this.state = {
       party: 0
